@@ -1,0 +1,22 @@
+# Experience & Awards on the home page.
+# Newest first. "kind" is the small orange label on the left.
+
+- kind: Award
+  title: Award, 2026 IC/CAD Contest, Taiwan
+  detail: "Problem D: Timing Fixing by Useful Skew (proposed by Realtek). Final ranking will be announced at the EDA Workshop in December 2026."
+  date: 2026.11
+
+- kind: Service
+  title: Student Volunteer, TAICHI 2026
+  detail: Taiwan's HCI conference. Guided guests, helped set up the venue, and ran the interactive wall.
+  date: 2026.08
+
+- kind: Leadership
+  title: Course Director, 28th Engineering Science Camp (ESC)
+  detail: Led a small team designing hands-on courses for about 150 high-school students — logic-gate circuits, ESP8266, SolidWorks, soldering, and wireless communication.
+  date: 2026.01
+
+- kind: Exhibition
+  title: LED Cube Light Show, NCKU Bike Festival
+  detail: A light-and-music show inside a blackout tent. Small groups entered at a time to experience one song.
+  date: 2024.03

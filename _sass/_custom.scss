@@ -1,0 +1,466 @@
+/*******************************************************************************
+ * Li-Cheng Tseng — custom styles on top of al-folio
+ * Colors come from CSS variables in _sass/_themes.scss (light + dark).
+ ******************************************************************************/
+
+$font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+$font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+$font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+/* ---------- Base ---------- */
+body {
+  font-family: $font-body;
+  transition:
+    background-color 0.25s,
+    color 0.25s;
+}
+
+h1,
+h2,
+h3,
+h4,
+.post-title,
+.navbar-brand {
+  font-family: $font-display;
+  letter-spacing: -0.01em;
+}
+
+.post-description,
+.desc {
+  color: var(--global-text-color-light);
+}
+
+a:hover {
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+/* ---------- Navbar ---------- */
+.navbar.navbar-light {
+  background-color: var(--global-bg-color);
+  border-bottom: 1px solid var(--global-divider-color);
+  box-shadow: none;
+
+  .navbar-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.15rem;
+    font-weight: 600;
+  }
+
+  .navbar-nav {
+    align-items: center;
+    gap: 4px;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.5rem 0.9rem;
+    border-radius: 999px;
+    text-transform: capitalize;
+  }
+
+  .navbar-nav .nav-item.active > .nav-link {
+    background-color: var(--pill-bg);
+    color: var(--pill-text);
+    font-weight: 500;
+
+    &:hover {
+      color: var(--pill-text);
+    }
+  }
+}
+
+.brand-badge {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #1f1a14 !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+#light-toggle {
+  width: 40px;
+  height: 40px;
+  margin-left: 6px;
+  border-radius: 999px;
+  border: 1.5px solid var(--edge);
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- Footer ---------- */
+footer.sticky-bottom {
+  background-color: var(--global-footer-bg-color);
+  border-top: none;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  font-size: 0.82rem;
+
+  .container,
+  .container * {
+    color: var(--global-footer-text-color);
+  }
+
+  a {
+    color: var(--global-footer-link-color) !important;
+  }
+}
+
+/* ---------- Shared building blocks (used by about / projects pages) ---------- */
+.mono {
+  font-family: $font-mono;
+}
+
+.eyebrow {
+  font-family: $font-mono;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--global-theme-color) !important;
+  margin: 0;
+}
+
+.highlight-mark {
+  background: linear-gradient(transparent var(--hl-stop), var(--accent) var(--hl-stop));
+}
+
+.chip {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: var(--chip-bg);
+  color: var(--chip-text) !important;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn-solid,
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  min-height: 44px;
+  box-sizing: border-box;
+}
+
+.btn-solid {
+  background: var(--pill-bg);
+  color: var(--pill-text) !important;
+  * {
+    color: var(--pill-text) !important;
+  }
+}
+
+.btn-outline {
+  border: 1.5px solid var(--edge);
+  color: var(--global-text-color) !important;
+}
+
+.btn-small {
+  padding: 6px 14px;
+  min-height: 36px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border-radius: 8px;
+}
+
+/* Image or placeholder with the offset yellow block behind it */
+.offset-frame {
+  position: relative;
+  padding: 0 14px 14px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 14px;
+    top: 14px;
+    right: 0;
+    bottom: 0;
+    border-radius: 16px;
+    background: var(--accent);
+  }
+
+  > img,
+  > picture img,
+  > .frame-inner {
+    position: relative;
+    display: block;
+    width: 100%;
+    border-radius: 16px;
+    border: 1.5px solid var(--edge);
+    background: var(--thumb-bg);
+    object-fit: cover;
+  }
+}
+
+.frame-inner {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  color: var(--global-text-color-light) !important;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 8px;
+}
+
+/* Numbered section header: "01  About" */
+.section-label {
+  font-family: $font-mono;
+  font-size: 0.8rem;
+  color: var(--global-theme-color) !important;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* ---------- Home page ---------- */
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding-top: 32px;
+
+  h2 {
+    font-size: 1.85rem;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.15;
+  }
+}
+
+.home-hero {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  gap: 48px;
+}
+
+.home-hero-text {
+  flex: 999 1 420px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.home-name {
+  font-size: clamp(2.8rem, 7vw, 4.2rem);
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.home-name-cn {
+  font-size: 0.42em;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: var(--global-text-color-light) !important;
+  margin-left: 6px;
+}
+
+.home-lead {
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: var(--body-text) !important;
+  margin: 0;
+  max-width: 560px;
+
+  strong {
+    color: var(--global-text-color);
+  }
+}
+
+.home-photo {
+  flex: 1 1 220px;
+  max-width: 300px;
+
+  > img,
+  > .frame-inner {
+    aspect-ratio: 4 / 5;
+  }
+}
+
+.home-photo-empty {
+  font-family: $font-display;
+  font-size: 3rem !important;
+  font-weight: 700;
+}
+
+.home-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 40px;
+}
+
+.home-section-head {
+  flex: 1 1 180px;
+}
+
+.home-section-body {
+  flex: 999 1 460px;
+  min-width: 0;
+}
+
+.home-bio p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--body-text);
+  margin: 0 0 1rem;
+}
+
+.exp-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1.5px solid var(--edge);
+}
+
+.exp-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.exp-kind {
+  flex: 0 0 100px;
+  font-family: $font-mono;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--global-theme-color) !important;
+}
+
+.exp-main {
+  flex: 999 1 260px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.exp-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.exp-detail {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--global-text-color-light) !important;
+}
+
+.exp-date {
+  font-family: $font-mono;
+  font-size: 0.85rem;
+  color: var(--global-text-color-light) !important;
+}
+
+.home-picks {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.home-picks-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.home-more {
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.pick-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.pick-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 14px;
+  border: 1.5px solid var(--edge);
+  background: var(--global-card-bg-color);
+  overflow: hidden;
+  color: var(--global-text-color) !important;
+  transition: transform 0.15s;
+
+  &:hover {
+    transform: translateY(-3px);
+    opacity: 1;
+  }
+}
+
+.pick-thumb {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: var(--thumb-bg);
+  border-bottom: 1.5px solid var(--edge);
+}
+
+.pick-thumb-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  text-align: center;
+  color: var(--global-text-color-light) !important;
+  font-size: 0.9rem;
+}
+
+.pick-body {
+  padding: 16px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.pick-title {
+  font-family: $font-display;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.pick-desc {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--global-text-color-light) !important;
+}

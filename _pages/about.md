@@ -2,33 +2,41 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+# ---- Hero (top of the home page) ----
+chinese_name: 曾立呈
+subtitle: >
+  CS senior at <strong>National Cheng Kung University</strong> (minor in EE).
+  I build physical, interactive things — devices you hold, wear, and play.
+interests:
+  - Haptic Feedback
+  - Tangible Interaction
+  - Music Technology
 
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+# Put your photo in assets/img/ and write its file name here, e.g. profile.jpg
+profile_image: profile.jpg
 
-announcements:
-  enabled: false # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+# Buttons under the intro. The first one is the dark (solid) button.
+links:
+  - label: Email me
+    icon: fa-solid fa-envelope
+    url: mailto:marsqq03130618@gmail.com
+  - label: GitHub
+    icon: fa-brands fa-github
+    url: https://github.com/chenfeng1212
+  - label: LinkedIn
+    icon: fa-brands fa-linkedin
+    url: https://www.linkedin.com/in/chenfeng-tseng
+  - label: CV
+    icon: fa-solid fa-file-lines
+    url: /assets/pdf/Li-Cheng_Tseng_CV.pdf
 
-latest_posts:
-  enabled: false
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+# How many "selected" projects to show at the bottom (projects with selected: true)
+selected_projects_limit: 3
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I'm a senior in the Department of Computer Science and Information Engineering at National Cheng Kung University (NCKU) in Tainan, Taiwan, with a minor in Electrical Engineering.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Outside of class, I spend a lot of my time at my university's Maker Space. I love turning ideas into things I can actually build and hand to people — from LED light props for live shows and interactive installations, down to hardware-level work on RISC-V and chip design tools.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I'm also a big fan of live music, especially Taiwanese and Japanese bands — MY FIRST STORY and icyball are always on my playlist. Having played percussion, trumpet, and jazz drums myself, I'm curious about how technology can change the way people feel and perform music.
