@@ -10,11 +10,13 @@ layout: default
   <section class="home-hero">
     <div class="home-hero-text">
       <p class="eyebrow">Hello, I am</p>
-      <h1 class="home-name">
-        <span class="highlight-mark">{{ site.first_name }}</span><br>
-        {{ site.last_name }}
-        {% if page.chinese_name %}<span class="home-name-sep" aria-hidden="true"></span><span class="home-name-cn">{{ page.chinese_name }}</span>{% endif %}
-      </h1>
+      <div class="home-name-row">
+        <h1 class="home-name">
+          <span class="highlight-mark">{{ site.first_name }}</span><br>
+          {{ site.last_name }}
+        </h1>
+        {% if page.chinese_name %}<span class="home-name-cn" lang="zh-Hant">{{ page.chinese_name }}</span>{% endif %}
+      </div>
       {% if page.subtitle %}<p class="home-lead">{{ page.subtitle }}</p>{% endif %}
       {% if page.affiliation %}<p class="home-affil">{{ page.affiliation }}</p>{% endif %}
       {% if page.interests %}

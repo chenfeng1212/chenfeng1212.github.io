@@ -278,25 +278,24 @@ footer.sticky-bottom {
   margin: 0;
 }
 
-/* "Tseng | 曾立呈": heavy English, light Chinese for contrast */
-.home-name-sep {
-  display: inline-block;
-  width: 2px;
-  height: 0.5em;
-  margin: 0 0.4em 0 0.42em;
-  background: var(--global-text-color-light);
-  opacity: 0.55;
-  border-radius: 1px;
-  vertical-align: 0.06em;
+/* Chinese name written vertically beside the English name, like a signature on a painting */
+.home-name-row {
+  display: flex;
+  align-items: stretch;
+  gap: 22px;
 }
 
 .home-name-cn {
-  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
-  font-size: 0.5em;
-  font-weight: 400;
-  letter-spacing: 0.18em;
+  writing-mode: vertical-rl;
+  align-self: flex-end;
+  font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.35em;
   color: var(--global-text-color-light) !important;
-  vertical-align: 0.06em;
+  padding-left: 18px;
+  border-left: 2px solid var(--accent);
 }
 
 .home-lead {
