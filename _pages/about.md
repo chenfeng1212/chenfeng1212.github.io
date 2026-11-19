@@ -37,7 +37,7 @@ links:
 selected_projects_limit: 3
 ---
 
-I'm a senior in the Department of Computer Science and Information Engineering at [National Cheng Kung University (NCKU)](https://www.ncku.edu.tw/){:target="_blank"} in Tainan, Taiwan, with a **minor in Electrical Engineering**.
+I'm a senior in the **Department of Computer Science and Information Engineering** at [National Cheng Kung University (NCKU)](https://www.ncku.edu.tw/){:target="_blank"} in Tainan, Taiwan, with a **minor in Electrical Engineering**.
 
 Outside of class, I spend a lot of my time at my university's **Maker Space**. I love turning ideas into things I can actually build and hand to people — from **LED light sticks for live shows** and **interactive installations**, down to hardware-level work on **RISC-V** and **chip design tools**.
 
