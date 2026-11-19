@@ -3,17 +3,20 @@ layout: about
 title: about
 permalink: /
 
-# ---- Hero (top of the home page) ----
+# ===== Hero (top of the home page) =====
 chinese_name: 曾立呈
 subtitle: >
-  CS senior at <strong>National Cheng Kung University</strong> (minor in EE).
-  I build physical, interactive things — devices you hold, wear, and play.
+  Somewhere between a circuit board and a drum kit,
+  I build devices that listen to people — and answer in light, sound, and touch.
+affiliation: >
+  CS senior at <a href="https://www.ncku.edu.tw/" target="_blank" rel="noopener">National Cheng Kung University</a> · Minor in EE
 interests:
-  - Haptic Feedback
-  - Tangible Interaction
+  - Human–Computer Interaction
+  - Tangible Interfaces
+  - Physical Computing
   - Music Technology
 
-# Put your photo in assets/img/ and write its file name here, e.g. profile.jpg
+# Put your photo in assets/img/ and write its file name here
 profile_image: profile.jpg
 
 # Buttons under the intro. The first one is the dark (solid) button.
@@ -35,8 +38,8 @@ links:
 selected_projects_limit: 3
 ---
 
-I'm a senior in the Department of Computer Science and Information Engineering at National Cheng Kung University (NCKU) in Tainan, Taiwan, with a minor in Electrical Engineering.
+I'm a senior in the Department of Computer Science and Information Engineering at [National Cheng Kung University (NCKU)](https://www.ncku.edu.tw/){:target="_blank"} in Tainan, Taiwan, with a **minor in Electrical Engineering**.
 
-Outside of class, I spend a lot of my time at my university's Maker Space. I love turning ideas into things I can actually build and hand to people — from LED light props for live shows and interactive installations, down to hardware-level work on RISC-V and chip design tools.
+Outside of class, I spend a lot of my time at my university's **Maker Space**. I love turning ideas into things I can actually build and hand to people — from **LED light sticks for live shows** and **interactive installations**, down to hardware-level work on **RISC-V** and **chip design tools**.
 
-I'm also a big fan of live music, especially Taiwanese and Japanese bands — MY FIRST STORY and icyball are always on my playlist. Having played percussion, trumpet, and jazz drums myself, I'm curious about how technology can change the way people feel and perform music.
+I'm also a big fan of live music, especially Taiwanese and Japanese bands — MY FIRST STORY and icyball are always on my playlist. Having played percussion, trumpet, and jazz drums myself, I'm curious about **how technology can change the way people feel and perform music**.

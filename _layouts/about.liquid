@@ -16,6 +16,7 @@ layout: default
         {% if page.chinese_name %}<span class="home-name-cn">{{ page.chinese_name }}</span>{% endif %}
       </h1>
       {% if page.subtitle %}<p class="home-lead">{{ page.subtitle }}</p>{% endif %}
+      {% if page.affiliation %}<p class="home-affil">{{ page.affiliation }}</p>{% endif %}
       {% if page.interests %}
         <div class="chip-row">
           {% for item in page.interests %}<span class="chip">{{ item }}</span>{% endfor %}

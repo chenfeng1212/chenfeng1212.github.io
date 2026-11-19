@@ -464,3 +464,45 @@ footer.sticky-bottom {
   line-height: 1.5;
   color: var(--global-text-color-light) !important;
 }
+
+/* Key phrases in the About text: bold with a soft marker underneath */
+.home-bio strong {
+  font-weight: 600;
+  color: var(--global-text-color);
+  background: linear-gradient(transparent 62%, var(--chip-bg) 62%);
+  padding: 0 1px;
+}
+
+.home-lead a {
+  font-weight: 600;
+  color: var(--global-text-color) !important;
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3px;
+}
+
+/* Small factual line under the artistic intro */
+.home-affil {
+  margin: -8px 0 0;
+  font-family: $font-mono;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  color: var(--global-text-color-light) !important;
+
+  a {
+    color: var(--global-text-color) !important;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+  }
+}
+
+.home-lead {
+  font-family: $font-display;
+  font-size: 1.35rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
