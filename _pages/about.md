@@ -9,11 +9,10 @@ subtitle: >
   Somewhere between a circuit board and a drum kit,
   I build devices that listen to people — and answer in light, sound, and touch.
 affiliation: >
-  CS senior at <a href="https://www.ncku.edu.tw/" target="_blank" rel="noopener">National Cheng Kung University</a> · Minor in EE
+  CSIE senior at <a href="https://www.ncku.edu.tw/" target="_blank" rel="noopener">National Cheng Kung University</a> · Minor in EE
 interests:
   - Human–Computer Interaction
   - Tangible Interfaces
-  - Physical Computing
   - Music Technology
 
 # Put your photo in assets/img/ and write its file name here
