@@ -205,7 +205,7 @@ collections:
       layout: post
     output: true
   projects:
-    output: true
+    output: true # a project gets its own page; the projects list links to it when "detail: true"
   teachings:
     output: true
 
@@ -307,6 +307,11 @@ defaults:
       path: "assets"
     values:
       sitemap: false
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
 
 sass:
   style: compressed

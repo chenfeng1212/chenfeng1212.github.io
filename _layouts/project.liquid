@@ -1,0 +1,73 @@
+---
+layout: default
+---
+{% comment %}
+  Li-Cheng: a single project page (used by files in _projects/).
+  Only projects with "detail: true" are linked from the projects list.
+{% endcomment %}
+<div class="post project-page">
+  <a class="back-link" href="{{ '/projects/' | relative_url }}">← All projects</a>
+
+  <header class="pj-header">
+    <p class="eyebrow">
+      {% if page.venue %}{{ page.venue }} · {% endif %}
+      {% if page.period %}{{ page.period }}{% else %}{{ page.date | date: '%Y.%m' }}{% endif %}
+    </p>
+    <h1 class="pj-title">{{ page.title }}</h1>
+    {% if page.subtitle %}<p class="pj-subtitle">{{ page.subtitle }}</p>{% endif %}
+    {% if page.tags %}
+      <div class="chip-row">
+        {% for t in page.tags %}<span class="chip">{{ t }}</span>{% endfor %}
+      </div>
+    {% endif %}
+  </header>
+
+  {% if page.hero %}
+    <figure class="pj-hero offset-frame">
+      <img src="{{ page.hero | relative_url }}" alt="{{ page.title }}" loading="eager">
+    </figure>
+  {% endif %}
+
+  <dl class="pj-facts">
+    {% if page.role %}<div><dt>My role</dt><dd>{{ page.role }}</dd></div>{% endif %}
+    {% if page.team %}<div><dt>Team</dt><dd>{{ page.team }}</dd></div>{% endif %}
+    {% if page.recognition %}<div><dt>Recognition</dt><dd>{{ page.recognition }}</dd></div>{% endif %}
+    {% if page.tech and page.tech.size > 0 %}<div><dt>Built with</dt><dd>{{ page.tech | join: ' · ' }}</dd></div>{% endif %}
+  </dl>
+
+  {% if page.links and page.links.size > 0 %}
+    <div class="btn-row">
+      {% for l in page.links %}
+        <a class="{% if forloop.first %}btn-solid{% else %}btn-outline{% endif %}" href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }} ↗</a>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <article class="pj-content">{{ content }}</article>
+
+  {% if page.videos and page.videos.size > 0 %}
+    <section class="pj-videos">
+      <h2>Videos</h2>
+      <div class="pj-video-grid">
+        {% for v in page.videos %}
+          <figure class="pj-video{% if v.vertical %} is-vertical{% endif %}">
+            <div class="pj-video-frame">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/{{ v.id }}"
+                title="{{ v.title }}"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <figcaption>{{ v.title }}</figcaption>
+          </figure>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+
+  {% if page.credits %}<p class="pj-credits">{{ page.credits }}</p>{% endif %}
+
+  <a class="back-link" href="{{ '/projects/' | relative_url }}">← All projects</a>
+</div>

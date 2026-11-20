@@ -106,7 +106,7 @@ layout: default
       <div class="pick-grid">
         {% assign limit = page.selected_projects_limit | default: 3 %}
         {% for p in picks limit: limit %}
-          <a class="pick-card" href="{% if p.redirect %}{{ p.redirect }}{% else %}{{ '/projects/' | relative_url }}#{{ p.slug }}{% endif %}">
+          <a class="pick-card" href="{% if p.detail %}{{ p.url | relative_url }}{% else %}{{ '/projects/' | relative_url }}#{{ p.slug }}{% endif %}">
             {% if p.img %}
               <img class="pick-thumb" src="{{ p.img | relative_url }}" alt="" loading="lazy">
             {% else %}
@@ -115,7 +115,7 @@ layout: default
             <div class="pick-body">
               {% if p.tags %}<span class="chip">{{ p.tags | first }} · {{ p.date | date: '%Y.%m' }}</span>{% endif %}
               <span class="pick-title">{{ p.title }}</span>
-              {% if p.description %}<span class="pick-desc">{{ p.description }}</span>{% endif %}
+              {% if p.venue %}<span class="pick-desc">{{ p.venue }}</span>{% endif %}
             </div>
           </a>
         {% endfor %}
