@@ -962,3 +962,18 @@ html[data-theme="dark"] {
   border-top: 1px solid var(--global-divider-color);
   margin: 0;
 }
+
+/* My own name in team lists (like a paper's author list) */
+.me {
+  font-weight: 700;
+  color: var(--global-text-color) !important;
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3px;
+}
+
+/* A single video spans the full width */
+.pj-video-grid > .pj-video:only-child {
+  grid-column: 1 / -1;
+}

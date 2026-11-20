@@ -8,7 +8,7 @@ detail: true
 selected: true
 tags: [YODEX, Installation, Multisensory]
 venue: Young Designers' Exhibition (YODEX)
-team: 4 industrial designers + 2 engineers
+team: "Design: Pin-Yi Lin, Yu-Hsuan Chen, Ying-Ju Yu, Ying-Chi Lo · Engineering: <span class=\"me\">Li-Cheng Tseng</span>, Wei-Yu Yi"
 role: Engineer — control server, iPad control logic, device communication, and the heat module's electronics
 recognition: Semi-finalist, 23rd Y.S. Awards · Exhibited at YODEX 2026
 summary: >
@@ -33,7 +33,7 @@ videos:
     id: 7GYz3Rosn7U
   - title: App intro
     id: G5TC6oxMq54
-credits: "Designers: Pin-Yi Lin, Yu-Hsuan Chen, Ying-Ju Yu, Ying-Chi Lo · Engineers: Li-Cheng Tseng, Wei-Yu Yi · Images from the team's portfolio."
+credits: "Images and videos from the neXus team's portfolio."
 ---
 
 ## Overview
