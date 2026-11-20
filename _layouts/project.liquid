@@ -48,6 +48,7 @@ layout: default
   {% if page.videos and page.videos.size > 0 %}
     <section class="pj-videos">
       <h2>Videos</h2>
+      {% if page.videos_source %}<p class="pj-source">{{ page.videos_source }}</p>{% endif %}
       <div class="pj-video-grid">
         {% for v in page.videos %}
           <figure class="pj-video{% if v.vertical %} is-vertical{% endif %}">
