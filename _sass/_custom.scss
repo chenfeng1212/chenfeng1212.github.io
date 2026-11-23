@@ -1038,3 +1038,37 @@ html[data-theme="dark"] {
   color: var(--global-theme-color) !important;
   margin-bottom: 2px;
 }
+
+/* Code listing next to a figure (e.g. RISC-V page) */
+.pj-split {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  gap: 24px;
+  align-items: center;
+  margin: 1.6rem 0 2rem;
+
+  @media (max-width: 700px) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .pj-figure {
+    margin: 0;
+  }
+}
+
+.pj-code pre {
+  margin: 0;
+  padding: 16px 18px;
+  border-radius: 14px;
+  background: #2b2723;
+  overflow-x: auto;
+
+  code {
+    font-family: $font-mono;
+    font-size: 0.78rem;
+    line-height: 1.55;
+    color: #f3ece2;
+    background: none;
+    white-space: pre;
+  }
+}

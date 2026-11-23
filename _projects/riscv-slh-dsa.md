@@ -53,15 +53,33 @@ Our project reproduces the hardware–software co-design from the paper *RVSLH: 
 
 - **Transpose and zero registers**: extra register names map onto the same physical registers in transposed order, so the 5×5 Keccak state can be transposed without moving any data.
 
-<div class="pj-figure-row">
+<div class="pj-split">
+  <figure class="pj-figure pj-code">
+    <pre><code>;; Compute C
+xor3v   v5,  v0,  v1,  v2
+xor3v   v5,  v3,  v4,  v5
+;; Compute D
+xorrv   v5,  v5
+;; Compute B
+rxorv   v6,  v0,  v5,  x0
+rxorv   v7,  v1,  v5,  x1
+rxorv   v8,  v2,  v5,  x2
+rxorv   v9,  v3,  v5,  x3
+rxorv   v10, v4,  v5,  x4
+;; Compute E
+xornav  v11, v7,  v8,  v6
+xornav  v12, v8,  v9,  v7
+xornav  v13, v9,  v10, v8
+xornav  v14, v10, v6,  v9
+xornav  v15, v6,  v7,  v10
+;; xor x[0] with RC
+...</code></pre>
+    <figcaption>One Keccak-f[1600] round written with our instructions.</figcaption>
+  </figure>
   <figure class="pj-figure">
-  <img src="{{ '/assets/img/projects/riscv/keccak_code.jpg' | relative_url }}" alt="Assembly code of one Keccak-f round written with the custom instructions" loading="lazy">
-  <figcaption>One Keccak-f[1600] round written with our instructions.</figcaption>
-</figure>
-  <figure class="pj-figure">
-  <img src="{{ '/assets/img/projects/riscv/register_map.jpg' | relative_url }}" alt="Register mapping: rows x0 to x4 and columns x16 to x20 refer to the same 5x5 grid of 64-bit lanes" loading="lazy">
-  <figcaption>Transposed register mapping: x0–x4 read the state by rows, x16–x20 by columns. Each cell is 64 bits.</figcaption>
-</figure>
+    <img src="{{ '/assets/img/projects/riscv/register_map.jpg' | relative_url }}" alt="Register mapping: rows x0 to x4 and columns x16 to x20 refer to the same 5x5 grid of 64-bit lanes" loading="lazy">
+    <figcaption>Transposed register mapping: x0–x4 read the state by rows, x16–x20 by columns. Each cell is 64 bits.</figcaption>
+  </figure>
 </div>
 
 <figure class="pj-figure">
