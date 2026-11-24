@@ -419,7 +419,12 @@ footer.sticky-bottom {
 
 .pick-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  @media (max-width: 560px) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
   gap: 20px;
 }
 
@@ -1135,4 +1140,81 @@ html[data-theme="dark"] {
   font-size: 0.88rem;
   line-height: 1.5;
   color: var(--global-text-color-light) !important;
+}
+
+/* Draft placeholders for media still to be added */
+.pj-todo {
+  margin: 1.2rem 0 1.8rem;
+  padding: 16px 18px;
+  border: 2px dashed var(--accent);
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--body-text);
+
+  strong {
+    background: none !important;
+    padding: 0 !important;
+  }
+}
+
+.pj-content blockquote {
+  margin: 1.2rem 0;
+  padding: 4px 0 4px 18px;
+  border-left: 4px solid var(--accent);
+  background: none;
+
+  p {
+    font-family: $font-display;
+    font-size: 1.15rem;
+    line-height: 1.55;
+    color: var(--global-text-color);
+  }
+}
+
+/* Three portrait photos in a row */
+.pj-figure-row.pj-row-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  @media (max-width: 700px) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  img {
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+  }
+}
+
+/* One vertical video alone: keep it phone-sized, not full width */
+.pj-video-grid > .pj-video.is-vertical:only-child {
+  grid-column: auto;
+  max-width: 340px;
+}
+
+/* Phone screenshots: three in a row, never cropped */
+.pj-phones {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  max-width: 720px;
+  margin: 1.4rem auto 2rem;
+
+  @media (max-width: 560px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pj-figure {
+    margin: 0;
+  }
+
+  img {
+    border-radius: 18px;
+    border: 1.5px solid var(--edge);
+  }
+}
+
+.pj-inline-video {
+  margin: 1.6rem 0 2rem;
 }

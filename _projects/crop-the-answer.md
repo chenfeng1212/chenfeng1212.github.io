@@ -7,7 +7,7 @@ detail: true
 selected: false
 tags: [Game, Unity, Education]
 venue: Windows Programming course project
-team: "石浚邑, <span class=\"me\">Li-Cheng Tseng</span>, 陳宇夫"
+team: "<span class=\"me\">Li-Cheng Tseng</span>, 石浚邑, 陳宇夫"
 role: Fishing system, warehouse system, math mini-game, polish, and the final presentation
 summary: >
   A 2D educational farming game in the spirit of Harvest Moon. Players farm, fish, and talk to NPCs, who quiz them on

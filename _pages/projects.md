@@ -12,8 +12,10 @@ sections:
   - key: maker
     title: Maker & Course Projects
 
-# Smaller course projects listed at the bottom (no picture needed)
+# Smaller projects listed at the bottom (no picture needed)
 more_projects:
+  - name: LED Cube & DIY LED Matrix
+    note: NCKU Bike Festival, 2024 · a light-and-music LED cube show in a blackout tent, plus a hand-built dot-matrix panel and a mini-game
   - name: PIC Tetris 2 You
     note: Microcomputer course · C on PIC
   - name: VPP Real-Time Scheduling System
@@ -83,7 +85,7 @@ more_projects:
 
         {% if forloop.last and page.more_projects %}
           <div class="proj-more">
-            <h3>More course projects</h3>
+            <h3>More projects</h3>
             <ul>
               {% for m in page.more_projects %}
                 <li><span class="proj-more-name">{{ m.name }}</span><span class="proj-more-note">{{ m.note }}</span></li>

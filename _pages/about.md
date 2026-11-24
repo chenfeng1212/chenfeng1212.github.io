@@ -34,7 +34,7 @@ links:
     url: /assets/pdf/Li-Cheng_Tseng_CV.pdf
 
 # How many "selected" projects to show at the bottom (projects with selected: true)
-selected_projects_limit: 3
+selected_projects_limit: 4
 ---
 
 I'm a senior in the **Department of Computer Science and Information Engineering** at [National Cheng Kung University (NCKU)](https://www.ncku.edu.tw/){:target="_blank"} in Tainan, Taiwan, with a **minor in Electrical Engineering**.
