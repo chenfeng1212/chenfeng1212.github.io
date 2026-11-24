@@ -6,9 +6,9 @@ category: maker
 detail: true
 selected: false
 tags: [Performance, LED, POV]
-venue: 118th Freshman O-Camp · 28th Engineering Science Camp
+venue: 118th & 119th Freshman O-Camp · 28th Engineering Science Camp
 team: "Ping-Jhao Hsu, Fan-Cheng Su, Che-Wei Chang · joined later: <span class=\"me\">Li-Cheng Tseng</span>, 林承緯"
-role: Joined mid-project — built the control interface with 林承緯, contributed to the server and firmware, and helped build the props
+role: Joined mid-project — built the control interface with 林承緯, contributed to the server and firmware, helped build the props, and performed with them
 summary: >
   Spinning LED props that use **persistence of vision** to draw images in the air, controlled wirelessly in sync with music.
   I joined the senior team mid-project: with a classmate, I built the **control interface** used during shows,
@@ -20,10 +20,8 @@ links:
     url: https://github.com/ivan125126/light_light_light
   - label: Original project page
     url: https://hsupingjhao.info/projects/Lux/
-videos_source: 'Performance videos by the Lux team, from <a href="https://hsupingjhao.info/projects/Lux/" target="_blank" rel="noopener">Ping-Jhao Hsu’s project page</a>.'
+videos_source: 'Earlier performances by the Lux team, from <a href="https://hsupingjhao.info/projects/Lux/" target="_blank" rel="noopener">Ping-Jhao Hsu’s project page</a>.'
 videos:
-  - title: 118th Freshman O-Camp — light stick
-    id: Ix1kZmECrI4
   - title: 27th Engineering Science Camp — stick, ball, and snake
     id: DXz8Qr7GCnU
   - title: 117th Freshman O-Camp — light stick
@@ -43,11 +41,27 @@ The spinning props — a **light stick**, a **light snake**, and a **light ball*
 
 ## My part
 
-I joined the project partway through, together with my classmate 林承緯, and worked on the props for the **118th Freshman O-Camp** and the **28th Engineering Science Camp**. The two of us:
+I joined the project partway through, together with my classmate 林承緯, and worked on the props for the **118th Freshman O-Camp**, the **28th Engineering Science Camp**, and the **119th Freshman O-Camp**. The two of us:
 
 - **Built the control interface** — the front-end screen used to run the light effects during a performance.
 - **Contributed to the server** and to **hardware and firmware changes**, taking part in the design discussions with the original team.
 - **Helped build the light sticks and light snakes** used on stage.
+- **Performed** with the props on stage at the 118th Freshman O-Camp.
+
+<div class="pj-video-grid pj-inline-video">
+  <figure class="pj-video">
+    <div class="pj-video-frame">
+      <iframe src="https://www.youtube-nocookie.com/embed/Ix1kZmECrI4" title="118th Freshman O-Camp — I am one of the performers on stage." loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <figcaption>118th Freshman O-Camp — I am one of the performers on stage.</figcaption>
+  </figure>
+  <figure class="pj-video">
+    <div class="pj-video-frame">
+      <iframe src="https://www.youtube-nocookie.com/embed/S6A5_S4tXNA" title="119th Freshman O-Camp — performed with props I helped build." loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <figcaption>119th Freshman O-Camp — performed with props I helped build.</figcaption>
+  </figure>
+</div>
 
 ## How it works
 

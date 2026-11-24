@@ -13,8 +13,8 @@ summary: >
   A concert light stick designed from scratch — 3D-printed enclosure, circuit, firmware, and control software — and
   turned into a **6-hour workshop** where about **150 high-school students** built their own. Sticks follow a central
   operator over ESP-NOW, and fall back to **phone control** on their own when the operator goes silent.
-img: /assets/img/projects/lightstick/hall.jpg
-hero: /assets/img/projects/lightstick/hall.jpg
+img: https://i.ytimg.com/vi/-e6HaGDkWbk/maxresdefault.jpg
+hero: https://i.ytimg.com/vi/-e6HaGDkWbk/maxresdefault.jpg
 tech: [ESP8266, ESP-NOW, WS2812B, Node.js, SolidWorks, 3D printing]
 links:
   - label: Code
