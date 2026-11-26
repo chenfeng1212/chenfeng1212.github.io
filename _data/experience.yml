@@ -2,8 +2,8 @@
 # Newest first. "kind" is the small orange label on the left.
 
 - kind: Award
-  title: Award, 2026 IC/CAD Contest, Taiwan
-  detail: "Problem D: Timing Fixing by Useful Skew (proposed by Realtek). Final ranking will be announced at the EDA Workshop in December 2026."
+  title: Excellent Award (特優, top prize), 2026 IC/CAD Contest, Taiwan
+  detail: "Problem D: Timing Fixing by Useful Skew (proposed by Realtek). Top-tier award; presented at the EDA Workshop in December 2026."
   date: 2026.11
 
 - kind: Service

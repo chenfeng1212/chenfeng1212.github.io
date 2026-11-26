@@ -64,12 +64,12 @@ cv:
         position: Volunteer
 
     Awards:
-      - title: Award, 2026 IC/CAD Contest, Taiwan
+      - title: Excellent Award (Top Prize), 2026 IC/CAD Contest, Taiwan
         authors:
           - "Problem D: Timing Fixing by Useful Skew (proposed by Realtek)"
         date: 2026-11
         awarder: Ministry of Education, Taiwan
-        summary: Final ranking to be announced at the EDA Workshop in December 2026.
+        summary: Top-tier award; presented at the EDA Workshop in December 2026.
       - title: Design Completion Certificate, 2025 National University IC Design Contest
         authors:
           - "Undergraduate Cell-Based Digital Design"

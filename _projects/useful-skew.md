@@ -7,10 +7,10 @@ category: research
 detail: true
 selected: true
 tags: [EDA, Algorithms]
-venue: 2026 IC/CAD Contest, Taiwan · Problem D · Award
+venue: 2026 IC/CAD Contest, Taiwan · Problem D · Excellent Award
 team: "<span class=\"me\">Li-Cheng Tseng</span>, Li Juin Tan, Yi Cheng Chen, Zhi Qian Xiao (equal contribution) · Advisor: Prof. Jai-Ming Lin"
 role: Built the Stage-2 PostGreedy optimizer (team of 4, equal contribution)
-recognition: Award, 2026 IC/CAD Contest — final ranking announced at the EDA Workshop, December 2026
+recognition: Excellent Award (特優, top prize), 2026 IC/CAD Contest — presented at the EDA Workshop, December 2026
 summary: >
   Our solution to Problem D (proposed by Realtek): fixing **timing violations** without touching the circuit logic,
   by deciding where to delay the clock. A two-stage greedy optimizer fully fixed setup and hold timing on all five
